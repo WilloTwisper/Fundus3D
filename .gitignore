@@ -1,0 +1,6 @@
+outputs/
+datasets/
+*.glb
+*.mp4
+MedSim-main/
+__fundus3d_repo/
