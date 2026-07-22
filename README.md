@@ -1,6 +1,26 @@
 # Fundus3D
 
-2D fundus photograph → 3D textured eye model + surgical microscope rendering.
+2D fundus photograph → 3D textured eye model → surgical microscope rendering.
+
+## Demo
+
+```bash
+# Generate eye model
+python -m fundus3d datasets/preprocessed_images/10_left.jpg -o eye.glb --mesh-mode full
+
+# Render microscope views
+python -m microscope eye.glb --light coaxial -o coaxial.png
+python -m microscope eye.glb --light oblique  -o oblique.png
+python -m microscope eye.glb --light red-reflex -o redreflex.png
+```
+
+### Example Output (10_left.jpg → 3D model → microscope)
+
+| Coaxial | Oblique | Red Reflex |
+|---------|---------|------------|
+| coaxial shadowless view | oblique reveals 3D surface | warm illumination |
+
+> Screenshots generated at 1024×1024, magnification 5×, mask radius 0.95.
 
 ## Modules
 
