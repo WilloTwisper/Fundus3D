@@ -4,3 +4,20 @@ datasets/
 *.mp4
 MedSim-main/
 __fundus3d_repo/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store

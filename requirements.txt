@@ -1,0 +1,6 @@
+numpy>=1.21
+opencv-python>=4.5
+trimesh>=3.9
+vtk>=9.0
+scipy>=1.7
+Pillow>=8.0
